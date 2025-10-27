@@ -1,4 +1,4 @@
-![Cover Image: (Okavango Delta, Botswana)](/images/blog/OKavangoDelta.jpg)
+![Cover Image: (Okavango Delta, Botswana)](/images/blog/OkavangoDelta.jpg)
 
 **Re-introducing Africa: A Story of People, Land, and Possibility**
 

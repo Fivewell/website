@@ -8,7 +8,7 @@
       id: '2',
       title: 'Re-introducing Africa: A Story of People, Land, and Possibility',
       type: 'article',
-      thumbnail: '/images/blog/OKavangoDelta.jpg',
+      thumbnail: '/images/blog/OkavangoDelta.jpg',
       date: '2025-10-25',
       url: '/media/re-introducing-africa',
       category: 'Featured Article',

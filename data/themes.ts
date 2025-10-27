@@ -122,10 +122,8 @@ export const themes: Theme[] = [
       },
       {
         id: "sustainable-resource-management",
-        
-          title: "Social and Institutional Resilience",
-          description: "Projects fostering inclusive systems that prioritize human development, equity, and local governance in responding to global challenges.",
-        
+       title: "Sustainable Economies",
+        description: "Projects supporting locally driven, circular, and climate-aligned economic systems that ensure prosperity without compromising environmental integrity.",
         image: "/assets/placeholder-resource.jpg",
         keyPoints: [
           "Water conservation techniques",
@@ -141,8 +139,8 @@ export const themes: Theme[] = [
       },
       {
         id: "economic-inclusion-green-growth",
-        title: "Economic Inclusion and Green Growth",
-        description: "Promoting equitable participation, circular economy models, and sustainable enterprise development.",
+        title: "Social and Institutional Resilience",
+          description: "Projects fostering inclusive systems that prioritize human development, equity, and local governance in responding to global challenges.",
         image: "/assets/placeholder-policy.jpg",
         keyPoints: [
           "Policy analysis and advocacy",
@@ -156,23 +154,6 @@ export const themes: Theme[] = [
           { value: "50+", label: "Markets covered" }
         ]
       },
-      {
-        id: "environmental-stewardship",
-        title: "Environmental Stewardship and Resource Management",
-        description: "Protecting ecosystems through responsible land use, renewable energy, and efficient resource utilization. Building sustainable & adaptive pathways.",
-        image: "/assets/Infrastructure.jpg",
-        keyPoints: [
-          "Waste-to-resource initiatives",
-          "Renewable energy solutions",
-          "Sustainable production cycles",
-          "Resource optimization"
-        ],
-        details: "Closing loops, creating value, minimizing waste.",
-        stats: [
-          { value: "60%", label: "Waste reduction" },
-          { value: "200+", label: "Circular projects" }
-        ]
-      }
     ],
     keyFocusAreas: [
       "Climate-smart agriculture",

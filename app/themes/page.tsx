@@ -19,35 +19,35 @@ export default function ThemesPage() {
     },
     // Knowledge, Research, and Capacity Building
     {
-      bg: 'bg-gray-50 dark:bg-gray-800/30',
+      bg: 'bg-white dark:bg-white/10',
       border: 'border-gray-200 dark:border-gray-700',
-      text: 'text-gray-700 dark:text-gray-300',
-      hover: 'hover:bg-gray-100 dark:hover:bg-gray-800/50',
-      button: 'bg-gray-100 dark:bg-gray-800/50 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700/70'
+      text: 'text-gray-800 dark:text-gray-200',
+      hover: 'hover:bg-gray-50 dark:hover:bg-white/20',
+      button: 'bg-white dark:bg-white/20 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-white/30'
     },
     // Innovation & Technology
-    {
-      bg: 'bg-blue-50 dark:bg-blue-900/30',
-      border: 'border-blue-200 dark:border-blue-800',
-      text: 'text-blue-700 dark:text-blue-300',
-      hover: 'hover:bg-blue-100 dark:hover:bg-blue-900/50',
-      button: 'bg-blue-100 dark:bg-blue-800/50 text-blue-700 dark:text-blue-200 hover:bg-blue-200 dark:hover:bg-blue-700/70'
+     {
+      bg: 'bg-white dark:bg-white/10',
+      border: 'border-gray-200 dark:border-gray-700',
+      text: 'text-gray-800 dark:text-gray-200',
+      hover: 'hover:bg-gray-50 dark:hover:bg-white/20',
+      button: 'bg-white dark:bg-white/20 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-white/30'
     },
     // Market Access & Regional Integration
     {
-      bg: 'bg-purple-50 dark:bg-purple-900/30',
-      border: 'border-purple-200 dark:border-purple-800',
-      text: 'text-purple-700 dark:text-purple-300',
+      bg: 'bg-white dark:bg-white/10',
+      border: 'border-gray-200 dark:border-gray-700',
+      text: 'text-gray-800 dark:text-gray-200',
       hover: 'hover:bg-purple-100 dark:hover:bg-purple-900/50',
       button: 'bg-purple-100 dark:bg-purple-800/50 text-purple-700 dark:text-purple-200 hover:bg-purple-200 dark:hover:bg-purple-700/70'
     },
     // Partnerships & Systems Change
     {
-      bg: 'bg-amber-50 dark:bg-amber-900/30',
-      border: 'border-amber-200 dark:border-amber-800',
-      text: 'text-amber-700 dark:text-amber-300',
-      hover: 'hover:bg-amber-100 dark:hover:bg-amber-900/50',
-      button: 'bg-amber-100 dark:bg-amber-800/50 text-amber-700 dark:text-amber-200 hover:bg-amber-200 dark:hover:bg-amber-700/70'
+      bg: 'bg-white dark:bg-white/10',
+      border: 'border-gray-200 dark:border-gray-700',
+      text: 'text-gray-800 dark:text-gray-200',
+      hover: 'hover:bg-gray-50 dark:hover:bg-white/20',
+      button: 'bg-white dark:bg-white/20 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-white/30'
     }
   ];
 
