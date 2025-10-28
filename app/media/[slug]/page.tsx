@@ -203,7 +203,7 @@ export default async function ArticlePage({ params }: ArticleParams) {
     return (
       <div className="min-h-screen pt-18 bg-gray-50">
         {/* Article Header */}
-        <div className="relative bg-green-700 py-16">
+        <div className="relative bg-[#748251] py-16">
           <div className="absolute inset-0 overflow-hidden">
             {data.image && (
               <Image

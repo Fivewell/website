@@ -1,7 +1,6 @@
 import MediaContnent from "@/components/Media";
 // import { getBlogPosts } from "@/lib/contentful";
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Agricultural Insights Blog | FiveWell Africa",
@@ -29,7 +28,7 @@ const BlogPage = async () => {
     <div className="min-h-screen pt-18">
       {/* Hero Section */}
       <div className="relative  py-20">
-        <div className="absolute inset-0 overflow-hidden"
+        {/* <div className="absolute inset-0 overflow-hidden"
         suppressHydrationWarning
         >
           <Image
@@ -38,7 +37,7 @@ const BlogPage = async () => {
             fill
             className="object-cover "
           />
-        </div>
+        </div> */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white sm:text-5xl">
