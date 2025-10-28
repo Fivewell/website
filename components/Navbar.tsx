@@ -6,7 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ModeToggle } from "./ui/modeToggle";
 
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -96,8 +95,8 @@ export default function Navbar() {
             >
               Contact Us
             </Link>
-            <div className="ml-6">
-              <ModeToggle /></div>
+            {/* <div className="ml-6">
+              <ModeToggle /></div> */}
           </div>
 
           {/* Mobile menu button */}

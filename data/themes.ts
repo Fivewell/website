@@ -643,7 +643,7 @@ export const themes: Theme[] = [
     image: "/assets/Partnerships.jpg",
     heroImage: "/assets/Partnerships.jpg",
     theme_page_description: "We collaborate closely with organizations, changemakers, governments, and private sector partners to drive meaningful development across Africa. Our partnerships are built on trust, shared values, and a common goal to create solutions that make a real difference in people’s lives. By connecting ideas, resources, and people, we help turn plans into action and strengthen the systems that sustain progress.\n\nWe also act as an implementing partner for governments and organizations that need reliable project delivery on the ground. Our team manages programs from planning to execution bridging ideas with action and ensuring every effort creates visible, lasting impact.",
-    ctaLink:"Partner With Us →",
+    ctaLink:"Explore Our Partnership Options",
     introduction: {
       title: "Partnerships & Systems Change",
       content: "We collaborate closely with organizations, changemakers, governments, and private sector partners to drive meaningful development across Africa. Our partnerships are built on trust, shared values, and a common goal to create solutions that make a real difference in people's lives. By connecting ideas, resources, and people, we help turn plans into action and strengthen the systems that sustain progress. We also act as an implementing partner for governments and organizations that need reliable project delivery on the ground. Our team manages programs from planning to execution bridging ideas with action and ensuring every effort creates visible, lasting impact.",

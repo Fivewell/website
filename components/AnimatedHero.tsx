@@ -25,7 +25,7 @@ export default function AnimatedHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 drop-shadow-lg text-white"
+           className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6"
         >
           Partner With Us
         </motion.h1>
@@ -35,7 +35,7 @@ export default function AnimatedHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          Join forces with Fivewell to create lasting impact in African agriculture
+         Connect. Collaborate. Create Impact
         </motion.p>
       </div>
     </section>

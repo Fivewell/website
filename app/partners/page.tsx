@@ -115,7 +115,7 @@ function BecomePartnerPage() {
   ];
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 mt-24">
+    <div className="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 mt-18">
       {/* Hero Section */}
       <AnimatedHero />
 

@@ -1,6 +1,5 @@
 "use client";
 
-import ProcessSection from "@/components/ProcessSection";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 import { themes } from "@/data/themes";
 import { motion } from "framer-motion";
@@ -34,12 +33,12 @@ export default function ThemesPage() {
       button: 'bg-white dark:bg-white/20 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-white/30'
     },
     // Market Access & Regional Integration
-    {
+      {
       bg: 'bg-white dark:bg-white/10',
       border: 'border-gray-200 dark:border-gray-700',
       text: 'text-gray-800 dark:text-gray-200',
-      hover: 'hover:bg-purple-100 dark:hover:bg-purple-900/50',
-      button: 'bg-purple-100 dark:bg-purple-800/50 text-purple-700 dark:text-purple-200 hover:bg-purple-200 dark:hover:bg-purple-700/70'
+      hover: 'hover:bg-gray-50 dark:hover:bg-white/20',
+      button: 'bg-white dark:bg-white/20 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-white/30'
     },
     // Partnerships & Systems Change
     {
@@ -217,11 +216,11 @@ export default function ThemesPage() {
           </div>
         </div>
       </section>
-      {themes[0]?.process && (
+      {/* {themes[0]?.process && (
         <section>
           <ProcessSection process={themes[0].process} />
         </section>
-      )}
+      )} */}
 
       {/* CTA Section */}
       <section className="py-16 bg-primary dark:bg-primary text-white">

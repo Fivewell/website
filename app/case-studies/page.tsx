@@ -36,21 +36,21 @@ const caseStudies = [
       { metric: "100%", label: "Fair Trade Certified" },
     ],
   },
-  {
-    client: "Agri-Fintech Startup, Nigeria",
-    title: "Developing a De-Risking Model for Smallholder Farmer Loans",
-    image:
-      "https://images.unsplash.com/photo-1554224155-16954405a255?w=800&h=600&fit=crop",
-    challenge:
-      "An innovative fintech startup aimed to provide loans to smallholder farmers but needed a reliable model to assess risk and predict repayment rates, a major barrier for traditional banks.",
-    solution:
-      "FiveWell Africa's data science team analyzed historical agricultural data and developed a proprietary credit scoring algorithm based on crop type, weather patterns, and satellite data. We helped them integrate this model into their loan application platform.",
-    results: [
-      { metric: "70%", label: "More Accurate Risk Prediction" },
-      { metric: "5,000+", label: "Farmers Financed in Year 1" },
-      { metric: "<5%", label: "Default Rate on Loans" },
-    ],
-  },
+  // {
+  //   client: "Agri-Fintech Startup, Nigeria",
+  //   title: "Developing a De-Risking Model for Smallholder Farmer Loans",
+  //   image:
+  //     "https://images.unsplash.com/photo-1554224155-16954405a255?w=800&h=600&fit=crop",
+  //   challenge:
+  //     "An innovative fintech startup aimed to provide loans to smallholder farmers but needed a reliable model to assess risk and predict repayment rates, a major barrier for traditional banks.",
+  //   solution:
+  //     "FiveWell Africa's data science team analyzed historical agricultural data and developed a proprietary credit scoring algorithm based on crop type, weather patterns, and satellite data. We helped them integrate this model into their loan application platform.",
+  //   results: [
+  //     { metric: "70%", label: "More Accurate Risk Prediction" },
+  //     { metric: "5,000+", label: "Farmers Financed in Year 1" },
+  //     { metric: "<5%", label: "Default Rate on Loans" },
+  //   ],
+  // },
 ];
 
 export default function CaseStudiesPage() {

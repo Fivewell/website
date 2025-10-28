@@ -148,7 +148,7 @@ export default function BecomePartnerForm() {
 
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-200">
-            How can we collaborate? <span className="text-red-500">*</span>
+            Your Message<span className="text-red-500">*</span>
           </label>
           <div className="mt-1">
             <textarea

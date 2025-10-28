@@ -220,9 +220,12 @@ export default function TeamMemberPage({ params }: PageProps) {
                   className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-6 mb-8 border border-primary/20 hover:shadow-md transition-shadow"
                 >
                  
-                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                    {member.detailedBio}
-                  </p>
+                  {member.detailedBio && (
+                    <div 
+                      className="text-gray-700 leading-relaxed text-sm sm:text-base whitespace-pre-line"
+                      dangerouslySetInnerHTML={{ __html: member.detailedBio.replace(/\n\n/g, '<br/><br/>') }}
+                    />
+                  )}
                 </motion.div>
                 <motion.div 
                   variants={item}

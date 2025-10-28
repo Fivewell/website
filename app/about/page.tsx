@@ -3,7 +3,6 @@
 import { Tabs, TabsContent, TabsList } from "@/components/ui/tabs";
 import { teamMembers } from "@/data/team";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -98,9 +97,9 @@ const AboutPage = () => {
                     Inspiration in Israel
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Witnessing firsthand how innovation, efficient systems, and
+                   In Israel we worked alongside leading experts in the Arava Valley and  witnessed firsthand how innovation, efficient systems, and
                     determination could turn desert sands into fields that feed
-                    the world, we worked alongside leading experts in the Arava Valley.
+                    the world.
                   </p>
                 </div>
               </motion.div>
@@ -118,12 +117,12 @@ const AboutPage = () => {
                     3
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    The Birth of FiveWell
+                    The Birth of Fivewell
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    We believed that if the desert could bloom, then Africa&apos;s challenges too could
+                   Inspired by this possibility, and sharing this vision, we came together to bring that spirit of innovation back home. We believed that if the desert could bloom, then Africa&apos;s challenges too could
                     be met with solutions rooted in knowledge, technology, and
-                    collaboration. Then, we became Fivewell.
+                    collaboration.Then, we became Fivewell.
                   </p>
                 </div>
               </motion.div>
@@ -144,7 +143,7 @@ const AboutPage = () => {
                     Our Vision Today
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Today, FiveWellAfrica stands as the convergence of five
+                    Today, Fivewell Africa stands as the convergence of five
                     journeys, five pillars of expertise, and one well of
                     solutions. With over 25 years of cumulative experience, we
                     are committed to being a bridge between needs and solutions,
@@ -222,7 +221,7 @@ const AboutPage = () => {
       </section>
         <section className="relative py-24 overflow-hidden">
       {/* Background Image with dark mode overlay */}
-      <div className="absolute inset-0 w-full h-full">
+      {/* <div className="absolute inset-0 w-full h-full">
         <div 
           className="absolute inset-0 bg-[url('/assets/Partnerships.jpg')] bg-cover bg-center bg-no-repeat dark:brightness-50 dark:contrast-125"
           style={{
@@ -231,33 +230,10 @@ const AboutPage = () => {
             filter: 'brightness(0.7) contrast(1.1)'
           }}
         />
-        {/* Dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-black/40 dark:bg-black/60" />
       </div>
       
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Partner with FiveWell Africa
-          </h2>
-          <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Join us in shaping Africa&apos;s sustainable future. Whether you are a changemaker, institution, or investor, Fivewell Africa is your partner for creating meaningful, long-term impact.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/partners#form">
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
-                <ExternalLink className="mr-2" size={20} />
-                Partner With Us →
-              </button>
-            </Link>
-          </div>
-        </motion.div>
-      </div>
+      <PartnerSection /> */}
     </section>
     </div>
   );
