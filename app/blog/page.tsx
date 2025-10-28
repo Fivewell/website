@@ -26,28 +26,17 @@ const BlogPage = async () => {
 
   return (
     <div className="min-h-screen pt-18">
-      {/* Hero Section */}
-      <div className="relative  py-20">
-        {/* <div className="absolute inset-0 overflow-hidden"
-        suppressHydrationWarning
-        >
-          <Image
-            src="/assets/Seedling.jpg"
-            alt="Agricultural Insights Blog"
-            fill
-            className="object-cover "
-          />
-        </div> */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <section className="py-20 bg-gradient-to-br from-primary to-primary/90 dark:from-primary/90 dark:to-primary/80">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-white sm:text-5xl">
+           
+               <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl">
               Stay connected with Fivewell Africa&apos;s latest updates, stories, and
               thought leadership.
             </h1>
-           
           </div>
         </div>
-      </div>
+      </section>
       <MediaContnent />
       {/* Main Content */}
       {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">

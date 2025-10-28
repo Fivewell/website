@@ -59,10 +59,10 @@ The insights from the project are transformative and overall farmers reduced wat
 A simple mistake as such could jeopardize livelihoods, expose communities, and violate constitutional rights of farmers by exposing their personal data for malicious use leaving them vulnerable to potential harm.
 
 That is why Fivewell Africa integrates **“privacy by design”** in every stage of project implementation:  
- ✅ Farmers are informed and consent is documented.  
- ✅ Data is anonymized before analysis.  
- ✅ Access is limited to authorized staff.  
- ✅ Secure cloud storage and encryption prevent unauthorized use.
+   ✓ Farmers are informed and consent is documented.  
+   ✓ Data is anonymized before analysis.  
+   ✓ Access is limited to authorized staff.  
+   ✓ Secure cloud storage and encryption prevent unauthorized use.
 
 The result? **Ethical innovation** that builds both resilience and trust.
 
