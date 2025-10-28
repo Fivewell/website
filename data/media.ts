@@ -4,12 +4,25 @@
 
   
   export const mediaItems: MediaGridItem[] = [
+      {
+      id: '3',
+      title: 'Why Data Privacy Matters: Building Trust in Kenya\'s Digital Development',
+      type: 'article',
+      thumbnail: '/images/blog/data-privacy-1.png',
+      date: '2025-10-25',
+      url: '/media/why-data-privacy-matters',
+      category: 'Featured Article',
+      source: 'FiveWell Africa',
+      tags: ['Data Privacy', 'Digital Development', 'Kenya'],
+      seoTitle: 'Why Data Privacy Matters: Building Trust in Kenya\'s Digital Development',
+      seoDescription: 'Explore how Kenya\'s Data Protection Act (2019) and Article 31 of the Constitution safeguard privacy and why ethical data handling is key to sustainable development. In this article we share insights into responsible data privacy practices in agricultural innovation and beyond.',
+    },
    {
       id: '2',
       title: 'Re-introducing Africa: A Story of People, Land, and Possibility',
       type: 'article',
       thumbnail: '/images/blog/OkavangoDelta.jpg',
-      date: '2025-10-25',
+      date: '2025-10-15',
       url: '/media/re-introducing-africa',
       category: 'Featured Article',
       source: 'FiveWell Africa',
@@ -50,19 +63,7 @@
     //   category: "Articl",
     //   source: "Logistics Monthly",
     // },
-      {
-      id: '3',
-      title: 'Why Data Privacy Matters: Building Trust in Kenya\'s Digital Development',
-      type: 'article',
-      thumbnail: '/images/blog/data-privacy-1.png',
-      date: '2024-07-15',
-      url: '/media/why-data-privacy-matters',
-      category: 'Featured Article',
-      source: 'FiveWell Africa',
-      tags: ['Data Privacy', 'Digital Development', 'Kenya'],
-      seoTitle: 'Why Data Privacy Matters: Building Trust in Kenya\'s Digital Development',
-      seoDescription: 'Explore how Kenya\'s Data Protection Act (2019) and Article 31 of the Constitution safeguard privacy and why ethical data handling is key to sustainable development. In this article we share insights into responsible data privacy practices in agricultural innovation and beyond.',
-    },
+    
     // {
     //   id: "1",
     //   title:

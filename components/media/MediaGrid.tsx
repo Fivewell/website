@@ -110,7 +110,7 @@ export default function MediaGrid({ mediaItems }: { mediaItems: MediaItem[] }) {
             <span className="sr-only">Open {item.type === "video" ? "video" : "image"} preview for {item.title}</span>
           </button>
           <div className="p-6 flex flex-col flex-grow">
-            <p className="text-sm font-semibold text-green-600 uppercase tracking-wider">
+            <p className="text-sm font-semibold text-[#0D2543] uppercase tracking-wider">
               {item.category}
             </p>
             <h3 className="text-lg font-bold text-gray-900 mt-2 mb-2 flex-grow">
@@ -144,7 +144,7 @@ export default function MediaGrid({ mediaItems }: { mediaItems: MediaItem[] }) {
                   <a
                     href={item.url}
                     {...(isPdf ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                    className="inline-flex items-center text-green-600 hover:text-green-700 font-medium mt-auto"
+                    className="inline-flex items-center text-[#0D2543] hover:text-[#0D2543] font-medium mt-auto"
                   >
                     Read More
                     <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
