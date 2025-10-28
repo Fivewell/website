@@ -135,7 +135,7 @@ export default async function ArticlePage({ params }: ArticleParams) {
         return (
           <a
             {...props}
-            className="text-green-600 hover:text-green-700 hover:underline font-medium"
+            className="text-blue-600 hover:text-blue-700 hover:underline font-medium"
             target={isExternal ? "_blank" : "_self"}
             rel={isExternal ? "noopener noreferrer" : undefined}
           />
