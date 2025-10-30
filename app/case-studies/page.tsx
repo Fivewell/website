@@ -7,34 +7,27 @@ import Image from "next/image";
 const caseStudies = [
   {
     client: "Large-Scale Commercial Farm, Kenya",
-    title:
-      "Boosting Crop Yield and Reducing Water Usage with Precision Agriculture",
-    image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",
-    challenge:
-      "A leading commercial farm was facing declining profitability due to rising water costs and inconsistent crop yields across their 5,000-hectare property.",
-    solution:
-      "FiveWell Africa conducted a comprehensive audit and implemented a precision agriculture strategy. This included deploying soil moisture sensors, using drone-based multispectral imaging for crop health analysis, and integrating a new farm management software platform.",
+    title: "Boosting Crop Yield and Reducing Water Usage with Precision Agriculture",
+    image: "/assets/PipeDrip.jpg",
+    challenge: "A leading commercial farm is facing declining profitability due to rising water costs and inconsistent crop yields across its 5,000-hectare property.",
+    solution: "Fivewell Africa begins with a comprehensive assessment to identify current inefficiencies in farm practices. Using these insights, we design a precision agriculture strategy tailored to the farm's specific conditions.\n\nThe strategy integrates data-driven options, mapping, and digital monitoring systems to optimize resource use, enhance yield consistency, and reduce operational costs.\n\nThe findings and recommendations are presented through a two-part report: one focused on capacity building to equip the farm's team with the necessary skills to implement solutions, and another on organizational adjustments to support long-term efficiency and decision-making.\n\n**Expected Outcome:**\nThe approach is projected to reduce water use by up to 25%, increase crop yields by 15–20%, and improve profit margins by approximately 10–12%.",
     results: [
       { metric: "+40%", label: "Increase in Crop Yield" },
       { metric: "-25%", label: "Reduction in Water Usage" },
-      { metric: "+15%", label: "Increase in Profit Margin" },
-    ],
+      { metric: "+15%", label: "Increase in Profit Margin" }
+    ]
   },
   {
     client: "Coffee Cooperative, Ethiopia",
     title: "Unlocking European Markets Through Supply Chain Optimization",
-    image:
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop",
-    challenge:
-      "An Ethiopian coffee cooperative produced high-quality beans but struggled with inefficient post-harvest processing and lacked the certifications needed to access lucrative European markets.",
-    solution:
-      "Our team provided hands-on training for improved processing and quality control. We guided the cooperative through the Fair Trade and Organic certification processes and established direct connections with specialty coffee buyers in Germany and the UK.",
+    image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop",
+    challenge: "A coffee cooperative produced high-quality beans but struggled with inefficient post-harvest processing and lacked the certifications needed to access lucrative European markets.",
+    solution: "We begin with a comprehensive diagnostic; mapping the value chain, auditing post-harvest operations, and benchmarking quality against international standards. We translate these insights into targeted interventions that ensure consistent, traceable output. At the same time, we support the cooperative in achieving certification readiness by developing actionable roadmaps and internal control systems to meet international compliance requirements. Finally, we facilitate access to European markets, shaping market positioning, branding, and commercial agreements, while establishing monitoring frameworks to sustain performance improvements over time.\n\n**Expected Outcomes**\nOptimized post-harvest operations and achieved certifications enable the cooperative to reduce quality losses from 15–20% to below 5% and raise cupping scores above 85. Direct access to premium European buyers is expected to increase farmer incomes by 25–40%, while robust monitoring and control frameworks ensure sustained quality, compliance, and long-term growth.",
     results: [
       { metric: "+60%", label: "Higher Price Per Kilogram" },
       { metric: "3", label: "New International Buyers" },
-      { metric: "100%", label: "Fair Trade Certified" },
-    ],
+      { metric: "100%", label: "Fair Trade Certified" }
+    ]
   },
   // {
   //   client: "Agri-Fintech Startup, Nigeria",
@@ -112,7 +105,7 @@ export default function CaseStudiesPage() {
                       <h3 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
                         Our Solution
                       </h3>
-                      <p>{study.solution}</p>
+                      <p dangerouslySetInnerHTML={{ __html: study.solution.replace(/\n\n/g, '<br/><br/>') }} />
                     </div>
                   </div>
                   <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4 text-center">

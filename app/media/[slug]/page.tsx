@@ -203,8 +203,17 @@ export default async function ArticlePage({ params }: ArticleParams) {
     return (
       <div className="min-h-screen pt-18 bg-gray-50">
         {/* Article Header */}
-        <div className="relative bg-[#748251] py-16">
+        <div className="relative bg-[#748251] pt-16">
           <div className="absolute inset-0 overflow-hidden">
+             <div className="flex items-start justify-start mt-8 ml-24"> <Link
+                href="/blog"
+                className="inline-flex items-start text-white text-xl hover:text-white mb-4 transition-colors"
+              >
+                <svg className="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+                Back to Media
+              </Link></div>
             {data.image && (
               <Image
                 src={data.image}
@@ -215,16 +224,9 @@ export default async function ArticlePage({ params }: ArticleParams) {
             )}
           </div>
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+           
             <div className="text-center">
-              <Link
-                href="/blog"
-                className="inline-flex items-center text-green-200 hover:text-white mb-4 transition-colors"
-              >
-                <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-                Back to Media
-              </Link>
+             
               <h1 className="text-3xl md:text-4xl font-bold text-white">{data.title || 'Article'}</h1>
               <div className="mt-6 flex flex-wrap justify-center gap-4 text-green-100">
                 {data.date && (
@@ -253,7 +255,7 @@ export default async function ArticlePage({ params }: ArticleParams) {
         </div>
 
         {/* Article Content */}
-        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
           <div className="prose lg:prose-lg max-w-none">
             <ReactMarkdown components={components}>{content}</ReactMarkdown>
           </div>

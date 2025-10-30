@@ -19,22 +19,22 @@ const lato = Lato({
 export const metadata: Metadata = {
   metadataBase: new URL("https://fivewellafrica.com"),
   title: {
-    template: "%s | FiveWell Africa",
+    template: "%s | Fivewell Africa | Sustainable Development Consulting & Partnerships",
     default:
-      "FiveWell Africa | Agriculture Consulting for a Thriving Continent",
+      "Fivewell Africa | Sustainable Development Consulting & Partnerships",
   },
   description:
-    "Expert agriculture consulting and agribusiness advisory services to boost productivity and sustainability across Africa.",
+    "Partner with Fivewell Africa to design and implement sustainable, inclusive solutions that drive measurable impact across Africa.",
 
   openGraph: {
-    title: "FiveWell Africa | Agriculture Consulting for a Thriving Continent",
+    title: "Fivewell Africa | Sustainable Development Consulting & Partnerships",
     description:
-      "Expert agriculture consulting and agribusiness advisory services to boost productivity and sustainability across Africa.",
+      "Partner with Fivewell Africa to design and implement sustainable, inclusive solutions that drive measurable impact across Africa.",
     url: "https://fivewellafrica.com",
-    siteName: "FiveWell Africa",
+    siteName: "Fivewell Africa | Sustainable Development Consulting & Partnerships",
     images: [
       {
-        url: "/og-image.png", // Must be an absolute URL
+        url: "/og-image.png", 
         width: 1200,
         height: 630,
       },
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FiveWell Africa | Agriculture Consulting for a Thriving Continent",
+    title: "Fivewell Africa | Sustainable Development Consulting & Partnerships",
     description:
-      "Expert agriculture consulting and agribusiness advisory services to boost productivity and sustainability across Africa.",
-    images: ["/og-image.png"], // Must be an absolute URL
+      "Partner with Fivewell Africa to design and implement sustainable, inclusive solutions that drive measurable impact across Africa.",
+    images: ["/og-image.png"], 
   },
 };
 
@@ -71,7 +71,23 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" suppressHydrationWarning className={`${lato.variable} font-sans`}>
+    <html 
+      lang="en" 
+      suppressHydrationWarning 
+      className={`${lato.variable} font-sans dark`}
+      style={{ colorScheme: 'dark' }}
+    >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Force dark mode before page render
+              document.documentElement.classList.add('dark');
+              document.documentElement.style.colorScheme = 'dark';
+            `,
+          }}
+        />
+      </head>
       <body>
         <script
           type="application/ld+json"
@@ -80,7 +96,8 @@ export default function RootLayout({
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"
-            enableSystem
+            enableSystem={false}
+            forcedTheme="dark"
             disableTransitionOnChange
           >
         <Navbar />

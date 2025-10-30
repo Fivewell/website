@@ -1,4 +1,12 @@
+# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
 
-Sitemap: https://fivewellafrica.com/sitemap.xml
+# Sitemaps
+Sitemap: https://fivewell.africa/sitemap.xml
+
+# Crawl-delay: 10
+# Uncomment above and adjust if needed to limit crawl rate
