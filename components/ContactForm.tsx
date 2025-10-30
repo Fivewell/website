@@ -46,42 +46,52 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="lg:grid lg:grid-cols-2 lg:gap-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white dark:bg-gray-800/80">
+      <div className="lg:grid lg:grid-cols-2 lg:gap-12">
         {/* Contact Information */}
         <div className="mb-12 lg:mb-0">
-          <h2 className="text-3xl font-bold text-[#F5D7A2] mb-6 mt-9">Get in Touch</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+          <h2 className="text-3xl font-bold text-primary-400 dark:text-[#F5D7A2] mb-6">Get in Touch</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
             Have questions about our services or want to discuss a potential project?
             Fill out the form or reach out to us directly.
           </p>
 
-          <div className="space-y-6">
-            <div className="flex items-start">
-              <a href="mailto:info@fivewellafrica.com" className="flex-shrink-0 h-6 w-6 text-primary hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
-                <Mail className="h-6 w-6" />
-              </a>
+          <div className="space-y-8">
+            <div className="flex items-start p-4 rounded-xl bg-gray-50/80 dark:bg-gray-800/30 shadow-sm hover:shadow-md dark:shadow-gray-900/30 transition-all duration-200 border border-gray-100 dark:border-gray-700/50">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-blue-50/80 dark:bg-blue-900/20 flex items-center justify-center">
+                <Mail className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+              </div>
               <div className="ml-4">
-                <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Email us</h3>
-                <p className="text-gray-600 dark:text-gray-400">info@fivewellafrica.com</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Email us</h3>
+                <a 
+                  href="mailto:info@fivewellafrica.com" 
+                  className="mt-1 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                >
+                  info@fivewellafrica.com
+                </a>
               </div>
             </div>
 
-            <div className="flex items-start">
-              <a href="tel:+254741865915" className="flex-shrink-0 h-6 w-6 text-primary hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
-                <Phone className="h-6 w-6" />
-              </a>
+            <div className="flex items-start p-4 rounded-xl bg-gray-50/80 dark:bg-gray-800/30 shadow-sm hover:shadow-md dark:shadow-gray-900/30 transition-all duration-200 border border-gray-100 dark:border-gray-700/50">
+              <div className="flex-shrink-0 h-12 w-12 rounded-full bg-green-50/80 dark:bg-green-900/20 flex items-center justify-center">
+                <Phone className="h-6 w-6 text-green-600 dark:text-green-400" />
+              </div>
               <div className="ml-4">
-                <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Call us</h3>
-                <p className="text-gray-600 dark:text-gray-400">+254 741 865 915</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Call us</h3>
+                <a 
+                  href="tel:+254741865915" 
+                  className="mt-1 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                >
+                  +254 741 865 915
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         {/* Contact Form */}
-        <div className="bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-900/50 rounded-lg p-8">
-          <h2 className="text-2xl font-bold text-[#F5D7A2] mb-6">Send us a Message</h2>
+        <div className="bg-white dark:bg-gray-800/80 shadow-xl dark:shadow-gray-900/30 rounded-2xl p-8 backdrop-blur-sm border border-gray-100 dark:border-gray-700/50 transition-all duration-300 hover:shadow-2xl dark:hover:shadow-gray-900/50">
+          <h2 className="text-2xl font-bold text-primary-600 dark:text-[#F5D7A2] mb-6">Send us a Message</h2>
 
           {submitStatus && (
             <div className={`mb-6 p-4 rounded-md ${submitStatus.success ? 'bg-green-50 dark:bg-green-900/30' : 'bg-red-50 dark:bg-red-900/30'
