@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export type MediaItem = {
@@ -17,6 +18,8 @@ export type MediaItem = {
   seoDescription?: string;
   source: string;
 };
+
+const router = useRouter();
 
 const getTypeIcon = (type: string) => {
   switch (type) {
@@ -102,8 +105,8 @@ export default function MediaGrid({ mediaItems }: { mediaItems: MediaItem[] }) {
         >
           <button
             type="button"
-            onClick={() => setOpenItem(item)}
             className="relative h-48 text-left"
+            onClick={() => router.push(`/media/${item.id}`)}
           >
             <Image src={item.thumbnail} alt={item.title} fill className="object-cover" />
             {getTypeIcon(item.type)}
@@ -144,7 +147,7 @@ export default function MediaGrid({ mediaItems }: { mediaItems: MediaItem[] }) {
                   <a
                     href={item.url}
                     {...(isPdf ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                    className="inline-flex items-center text-[#0D2543] hover:text-[#0D2543] font-medium mt-auto"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium mt-auto"
                   >
                     Read More
                     <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

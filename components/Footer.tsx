@@ -11,7 +11,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} FiveWell Africa. All rights reserved.
             <span className="block sm:inline">
               {' '}|{' '}
-              <Link href="/privacy-policy" className="hover:underline ml-1">
+              <Link href="/privacy-policy" className="hover:underline underline ml-1">
                 Privacy Policy
               </Link>
             </span>

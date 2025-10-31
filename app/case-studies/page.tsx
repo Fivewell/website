@@ -87,7 +87,7 @@ export default function CaseStudiesPage() {
                 className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
               >
                 <div className={`lg:order-${index % 2 === 0 ? "1" : "2"}`}>
-                  <p className="font-semibold text-primary">{study.client}</p>
+                  {/* <p className="font-semibold text-primary">{study.client}</p> */}
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white mt-2 mb-4">
                     {study.title}
                   </h2>

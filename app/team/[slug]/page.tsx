@@ -98,7 +98,7 @@ export default function TeamMemberPage({ params }: PageProps) {
         >
           <Link 
             href="/about"
-            className="inline-flex items-center text-primary hover:text-primary/80 transition-colors group"
+            className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors group"
           >
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
