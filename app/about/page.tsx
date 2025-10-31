@@ -218,8 +218,7 @@ const AboutPage = () => {
             </TabsContent>
           </Tabs>
         </div>
-      </section>
-        <section className="relative py-24 overflow-hidden">
+
       {/* Background Image with dark mode overlay */}
       {/* <div className="absolute inset-0 w-full h-full">
         <div 
