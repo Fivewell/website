@@ -59,7 +59,7 @@ export default function CaseStudiesPage() {
               transition={{ duration: 0.8 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6"
             >
-              Our Proven Results
+              Our Work in Perspective 
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 50 }}
@@ -67,9 +67,7 @@ export default function CaseStudiesPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
             >
-              We deliver measurable outcomes. Explore our case studies to see
-              how we empower African agribusinesses to achieve growth,
-              sustainability, and profitability.
+              Explore our case studies to see how we approach real-world challenges, driving sustainability, productivity, and long-term growth.
             </motion.p>
           </div>
         </div>
