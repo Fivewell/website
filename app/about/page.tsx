@@ -11,7 +11,7 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="pt-48 pb-16 bg-gray-100 dark:bg-gray-900">
+      <section className="pt-48 pb-8 bg-gray-100 dark:bg-gray-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: -50 }}
@@ -33,7 +33,7 @@ const AboutPage = () => {
       {/* Our Story Section */}
       <section className="pb-8 bg-white dark:bg-gray-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 mt-12">
+          <div className="text-center mb-12 ">
             <motion.h2
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
