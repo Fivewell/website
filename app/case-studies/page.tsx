@@ -123,14 +123,15 @@ export default function CaseStudiesPage() {
                     ))}
                   </div>
                 </div>
-                <div className={`lg:order-${index % 2 === 0 ? "2" : "1"}`}>
-                  <Image
-                    src={study.image}
-                    alt={study.title}
-                    width={800}
-                    height={600}
-                    className="rounded-2xl shadow-2xl object-cover dark:ring-2 dark:ring-gray-700"
-                  />
+                <div className={`lg:order-${index % 2 === 0 ? "2" : "1"} w-full h-full`}>
+                  <div className="relative aspect-[4/3] w-full h-full">
+                    <Image
+                      src={study.image}
+                      alt={study.title}
+                      fill
+                      className="rounded-2xl shadow-2xl object-cover dark:ring-2 dark:ring-gray-700"
+                    />
+                  </div>
                 </div>
               </motion.div>
             ))}

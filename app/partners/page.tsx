@@ -156,11 +156,11 @@ function BecomePartnerPage() {
              Together with like-minded partners, we pursue transformation that is ethical, inclusive, and sustainable.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {partnerProfiles.map((profile, index) => (
               <div
                 key={index}
-                className="bg-gray-50 dark:bg-gray-700 p-8 rounded-xl shadow-sm dark:shadow-gray-900/30 text-center hover:shadow-lg dark:hover:shadow-gray-900/50 transition-all duration-300"
+                className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] bg-gray-50 dark:bg-gray-700 p-8 rounded-xl shadow-sm dark:shadow-gray-900/30 text-center hover:shadow-lg dark:hover:shadow-gray-900/50 transition-all duration-300"
               >
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                   {profile.title}
