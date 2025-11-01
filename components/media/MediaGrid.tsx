@@ -19,7 +19,7 @@ export type MediaItem = {
   source: string;
 };
 
-const router = useRouter();
+
 
 const getTypeIcon = (type: string) => {
   switch (type) {
@@ -63,7 +63,7 @@ const getTypeIcon = (type: string) => {
 
 export default function MediaGrid({ mediaItems }: { mediaItems: MediaItem[] }) {
   const [openItem, setOpenItem] = useState<MediaItem | null>(null);
-
+const router = useRouter();
   const isVideo = (item: MediaItem) => item.type === "video";
   const isYouTube = (url: string) => /youtube\.com|youtu\.be/.test(url);
   const isVimeo = (url: string) => /vimeo\.com/.test(url);
