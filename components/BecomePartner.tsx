@@ -29,7 +29,7 @@ const BecomePartner = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Partner with FiveWell Africa
+            Partner with Fivewell Africa
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
             Join us in our drive to transform Africa through innovative solutions and sustainable practices.

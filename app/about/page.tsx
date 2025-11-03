@@ -20,7 +20,7 @@ const AboutPage = () => {
             className="text-center"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              About FiveWell Africa
+              About Fivewell Africa
             </h1>
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
              Fivewell Africa is a purpose-driven consulting group and implementing partner dedicated to advancing sustainable and inclusive development across the continent.
