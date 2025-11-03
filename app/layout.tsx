@@ -88,7 +88,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
+      <body className="min-w-[320px]">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
@@ -100,12 +100,17 @@ export default function RootLayout({
             forcedTheme="dark"
             disableTransitionOnChange
           >
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      
-        <GoogleAnalytics gaId="G-XXXXXXXXXX" />
-        <CookieConsent />
+          <div className="min-w-[320px] max-w-full overflow-x-hidden">
+            <div className="w-full">
+              <Navbar />
+            </div>
+            <main className="w-full">
+              {children}
+            </main>
+            <Footer />
+            <GoogleAnalytics gaId="G-XXXXXXXXXX" />
+            <CookieConsent />
+          </div>
         </ThemeProvider>
       </body>
     

@@ -57,7 +57,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative h-[72vh] overflow-hidden pt-20 pb-16">
+    <section className="relative h-[72vh] overflow-hidden pt-24 pb-16">
       {/* Background Images */}
       {heroSlides.map((slide, index) => (
         <motion.div
@@ -77,7 +77,7 @@ export default function HeroSection() {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 py-20 md:py-28 flex items-center justify-center h-full">
+      <div className="relative z-10 pb-20 mt-28 md:py-28 flex items-center justify-center h-full">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
             key={`title-${currentSlide}`}
@@ -115,14 +115,14 @@ export default function HeroSection() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors duration-200"
+        className="absolute left-4 top-1/2 transform mt-24 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors duration-200"
       >
         <ChevronLeft size={24} />
       </button>
       
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors duration-200"
+        className="absolute right-4 top-1/2 transform mt-24 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors duration-200"
       >
         <ChevronRight size={24} />
       </button>

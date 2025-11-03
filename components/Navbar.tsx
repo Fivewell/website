@@ -100,10 +100,11 @@ export default function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden relative z-50">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-white hover:text-white/80 p-2"
+              className="text-white hover:text-white/80 p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 rounded-md"
+              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -116,14 +117,14 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-gray-200/20"
+            className="fixed left-0 right-0 bg-primary z-40 md:hidden border-t border-gray-200/20 overflow-hidden"
           >
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-4 pt-2 pb-4 space-y-2 w-full">
               {navigationItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-text-white hover:text-white text-base font-medium"
+                  className="block w-full px-4 py-3 text-white hover:bg-[#4a5d4a] rounded-md text-base font-medium transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -131,10 +132,10 @@ export default function Navbar() {
               ))}
               <Link
                 href="/contact"
-                className="block w-full mt-4 bg-[#F3E6C2] text-black px-6 py-2 rounded-full text-center text-sm font-medium hover:bg-green-700 transition-colors duration-200"
+                className="block w-full mt-3 bg-[#F3E6C2] text-black px-6 py-3 rounded-full text-center text-sm font-medium hover:bg-[#e6d9b4] transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Get Started
+                Contact Us
               </Link>
             </div>
           </motion.div>

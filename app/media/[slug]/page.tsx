@@ -201,9 +201,9 @@ export default async function ArticlePage({ params }: ArticleParams) {
     };
 
     return (
-      <div className="min-h-screen pt-18 bg-gray-50">
+      <div className="min-h-screen bg-gray-50">
         {/* Article Header */}
-        <div className="relative bg-green-600 dark:bg-green-400 pt-16">
+        <div className="relative bg-[#748251] dark:bg-[#748251] pt-16 -mt-16">
           <div className="absolute inset-0 overflow-hidden">
              <div className="flex items-start justify-start mt-8 ml-24"> <Link
                 href="/blog"
