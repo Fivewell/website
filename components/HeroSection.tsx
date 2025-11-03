@@ -57,7 +57,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden pt-20 pb-16">
+    <section className="relative h-[72vh] overflow-hidden pt-20 pb-16">
       {/* Background Images */}
       {heroSlides.map((slide, index) => (
         <motion.div
