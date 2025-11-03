@@ -1,27 +1,60 @@
 import { Metadata } from 'next';
 
+// export const metadata: Metadata = {
+//   title: 'Our Partners | FiveWell Africa',
+//   description: 'Meet our valued partners who collaborate with FiveWell Africa to drive sustainable agriculture and development initiatives across the continent.',
+//   openGraph: {
+//     title: 'Our Partners | FiveWell Africa',
+//     description: 'Meet our valued partners who collaborate with FiveWell Africa to drive sustainable agriculture and development initiatives across the continent.',
+//     url: 'https://fivewell.africa/partners',
+//     siteName: 'FiveWell Africa',
+//     locale: 'en_US',
+//     type: 'website',
+//   },
+//   twitter: {
+//     card: 'summary_large_image',
+//     title: 'Our Partners | FiveWell Africa',
+//     description: 'Collaborating for sustainable agriculture in Africa. Meet our network of partners working towards a better future.',
+//     creator: '@fivewellafrica',
+//   },
+//   alternates: {
+//     canonical: 'https://fivewell.africa/partners',
+//   },
+// };
 export const metadata: Metadata = {
-  title: 'Our Partners | FiveWell Africa',
-  description: 'Meet our valued partners who collaborate with FiveWell Africa to drive sustainable agriculture and development initiatives across the continent.',
+  metadataBase: new URL("https://fivewellafrica.com"),
+  title: {
+    template: "%s | Fivewell Africa | Sustainable Development Consulting & Partnerships",
+    default:
+      "Fivewell Africa | Sustainable Development Consulting & Partnerships",
+  },
+  description:
+    "Partner with Fivewell Africa to design and implement sustainable, inclusive solutions that drive measurable impact across Africa.",
+
   openGraph: {
-    title: 'Our Partners | FiveWell Africa',
-    description: 'Meet our valued partners who collaborate with FiveWell Africa to drive sustainable agriculture and development initiatives across the continent.',
-    url: 'https://fivewell.africa/partners',
-    siteName: 'FiveWell Africa',
-    locale: 'en_US',
-    type: 'website',
+    title: "Fivewell Africa | Sustainable Development Consulting & Partnerships",
+    description:
+      "Partner with Fivewell Africa to design and implement sustainable, inclusive solutions that drive measurable impact across Africa.",
+    url: "https://fivewellafrica.com",
+    siteName: "Fivewell Africa | Sustainable Development Consulting & Partnerships",
+    images: [
+      {
+        url: "/og-image.png", 
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Our Partners | FiveWell Africa',
-    description: 'Collaborating for sustainable agriculture in Africa. Meet our network of partners working towards a better future.',
-    creator: '@fivewellafrica',
-  },
-  alternates: {
-    canonical: 'https://fivewell.africa/partners',
+    card: "summary_large_image",
+    title: "Fivewell Africa | Sustainable Development Consulting & Partnerships",
+    description:
+      "Partner with Fivewell Africa to design and implement sustainable, inclusive solutions that drive measurable impact across Africa.",
+    images: ["/og-image.png"], 
   },
 };
-
 export default function PartnersLayout({
   children,
 }: {
