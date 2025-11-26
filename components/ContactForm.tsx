@@ -204,7 +204,7 @@ export default function ContactForm() {
                   <option value="">Select a subject</option>
                   <option value="General Inquiry">General Inquiry</option>
                   <option value="Partnership">Partnership</option>
-                  <option value="Book a Consultion call">Book a Consultion call</option>
+                  <option value="Book a Consultation call">Book a Consultation call</option>
                   <option value="Career Opportunities">Career Opportunities</option>
                   <option value="Other">Other</option>
                 </select>

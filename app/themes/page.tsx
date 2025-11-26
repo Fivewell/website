@@ -151,6 +151,7 @@ export default function ThemesPage() {
               return (
                 <motion.div
                   key={theme.slug}
+                  id={theme.slug}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -169,7 +170,7 @@ export default function ThemesPage() {
                           className="object-cover transition-transform duration-700 group-hover:scale-105"
                           priority={index === 0}
                         />
-                        <div className="absolute bottom-4 left-4 z-20">
+                        <div className="absolute top-4 left-4 z-20">
                           <span className={`inline-flex items-center justify-center w-12 h-12 rounded-full ${color.button} text-base font-bold mb-3`}>
                             {String(index + 1).padStart(2, '0')}
                           </span>

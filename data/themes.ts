@@ -70,7 +70,7 @@ export const themes: Theme[] = [
     image: "/assets/NorthEasternWomen.jpg",
     heroImage: "/assets/NorthEasternWomen.jpg",
     theme_page_description: "This theme is designed to deliver measurable impact across multiple Sustainable Development Goals (SDGs). Through this theme, the organization advances models that regenerate natural ecosystems, empower communities to lead their own development, and build economic systems that can withstand environmental and market shocks. It seeks to create a balance between people, planet, and prosperity by promoting practices that sustain life, nurture equity, and foster long-term transformation.\n\nOur sustainability work is organized around three interconnected pillars that collectively advance all 17 SDGs, ensuring impact that is both broad in scope and deep in transformation.",
-    ctaLink: "Explore Sustainable Pathways →",
+    ctaLink: "Explore Sustainable Pathways ",
     introduction: {
       title: "Sustainable & Adaptive Pathways for Development",
       content: "This theme is designed to deliver measurable impact across multiple Sustainable Development Goals (SDGs). Through this theme, the organization advances models that regenerate natural ecosystems, empower communities to lead their own development, and build economic systems that can withstand environmental and market shocks. It seeks to create a balance between people, planet, and prosperity by promoting practices that sustain life, nurture equity, and foster long-term transformation.",
@@ -208,7 +208,7 @@ export const themes: Theme[] = [
     metaDescription: "Transform ideas into action with Fivewell Africa. Evidence-based research, training, and knowledge sharing for inclusive and informed development",
     image: "/assets/StickyNotes.jpg",
     heroImage: "/assets/StickyNotes.jpg",
-    ctaLink: "Learn How We Build Knowledge →",
+    ctaLink: "Learn How We Build Knowledge ",
     introduction: {
       title: "Knowledge, Research, and Capacity Building",
       content: "We believe knowledge is the foundation of progress. Through research and learning, we turn insights into action bridging data, experience, and innovation to solve real-world challenges. Our work strengthens institutions and communities by building skills, sharing evidence, and nurturing ideas that shape better futures and that make development more informed, inclusive, and sustainable.",
@@ -353,7 +353,7 @@ export const themes: Theme[] = [
     metaDescription: "Harness technology to solve Africa's development challenges. Fivewell Africa drives digital innovation, AI, and tools for inclusive transformation.",
     image: "/assets/Innovation.jpg",
     heroImage: "/assets/Innovation.jpg",
-    ctaLink: "Discover Our Innovation Approach →",
+    ctaLink: "Discover Our Innovation Approach ",
     introduction: {
       title: "Innovation & Technology",
       content: "We believe that new ideas and technology can help solve Africa's most pressing challenges including system inefficiencies. Using tools like data, digital platforms, and artificial intelligence, we make development work smarter, faster, and more effective. But technology is never the goal in itself; it's a way to improve lives, strengthen communities, and create lasting solutions. We also support innovators, startups, and institutions to test and scale their ideas so they can reach more people and make real impact. Our focus is on ensuring that innovation remains ethical, inclusive, and practical.",
@@ -498,7 +498,7 @@ export const themes: Theme[] = [
     image: "/assets/Maersk.jpg",
     theme_page_description:"Expanding markets is central to unlocking Africa’s full potential. Under this theme, we connect producers, innovators, and institutions to markets across Africa and beyond, enabling growth that is fair, equitable, and sustainable. Our work focuses on identifying barriers that limit access, strengthening value chains, and fostering regional integration so that African enterprises can thrive in global markets.\n\nWe increase producer earnings by reducing intermediaries, improving quality, and creating new regional and digital trade channels. By bridging policy, innovation, and opportunity, we help build a continent that trades more with itself, and with the world on fair and forward-looking terms.",
     heroImage: "/assets/Maersk.jpg",
-    ctaLink: " Learn About Our Market Work →",
+    ctaLink: " Learn About Our Market Work ",
     introduction: {
       title: "Market Access & Regional Integration",
       content: "Expanding markets is central to unlocking Africa's full potential. Under this theme, we connect producers, innovators, and institutions to markets across Africa and beyond, enabling growth that is fair, equitable, and sustainable. Our work focuses on identifying barriers that limit access, strengthening value chains, and fostering regional integration so that African enterprises can thrive in global markets. We increase producer earnings by reducing intermediaries, improving quality, and creating new regional and digital trade channels. By bridging policy, innovation, and opportunity, we help build a continent that trades more with itself, and with the world on fair and forward-looking terms.",

@@ -69,7 +69,7 @@ export default function OurWorkSection() {
                   
                   {/* Content */}
                   <div className={`flex-1 min-w-0 -mt-1 ${isEven ? 'md:pr-8' : 'md:pl-8'} mt-12`}>
-                    <Link href={`/themes/`} className="group">
+                    <Link href={`/themes#${theme.slug}`} className="group">
                       <h3 className={`text-2xl md:text-3xl font-bold ${textColors[index % textColors.length]} mb-3 group-hover:underline`}>
                         {theme.title}
                       </h3>
@@ -78,17 +78,17 @@ export default function OurWorkSection() {
                       {theme.description}
                     </p>
                     <Link 
-                      href={`/themes`}
-                      className={`inline-flex  items-center px-5 py-2 border-2 ${borderColors[index % borderColors.length]} rounded-full text-sm md:text-base font-medium ${textColors[index % textColors.length]} hover:bg-opacity-10 transition-all duration-200`}
+                      href={`/themes#${theme.slug}`}
+                      className={`inline-flex items-center px-5 py-2 border-2 ${borderColors[index % borderColors.length]} rounded-full text-sm md:text-base font-medium ${textColors[index % textColors.length]} hover:bg-opacity-10 transition-all duration-200`}
                     >
-                      {theme.ctaLink}
+                      {theme.ctaLink?.replace(/→/g, '').trim()}
                       <ArrowRight className="ml-2" size={16} />
                     </Link>
                   </div>
                   
                   {/* Image */}
                   <div className={`w-full md:w-[500px] h-[400px] rounded-2xl overflow-hidden flex-shrink-0 shadow-xl dark:shadow-gray-800/30 mt-6 md:mt-0 ${isEven ? 'md:ml-12' : 'md:mr-12'}`}>
-                    <Link href={`/themes/`} className="block h-full">
+                    <Link href={`/themes#${theme.slug}`} className="block h-full">
                       <Image
                         src={theme.image || "/placeholder.svg"}
                         alt={theme.title}

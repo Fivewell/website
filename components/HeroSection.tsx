@@ -77,7 +77,7 @@ export default function HeroSection() {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 pb-20 mt-28 md:py-28 flex items-center justify-center h-full">
+      <div className="relative z-10 pb-20 mt-28 md:mt-12 md:py-24 flex items-center justify-center h-full">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
             key={`title-${currentSlide}`}

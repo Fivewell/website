@@ -55,7 +55,7 @@ export default async function ArticlePage({ params }: ArticleParams) {
 
   try {
     const fileContents = fs.readFileSync(filePath, 'utf8');
-    const { data, content: rawContent } = matter(fileContents);
+    const { content: rawContent } = matter(fileContents);
     let content = rawContent.replace(/<data:image/g, 'data:image');
     content = content.replace(/(base64,[\s\S]*?)>/g, '$1');
 
@@ -201,58 +201,20 @@ export default async function ArticlePage({ params }: ArticleParams) {
     };
 
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className=" bg-gray-50 pt-20">
         {/* Article Header */}
-        <div className="relative bg-[#748251] dark:bg-[#748251] pt-16">
-          <div className="absolute inset-0 overflow-hidden">
-             <div className="flex items-start justify-start mt-8 ml-24"> <Link
+     
+          <div className="absolute inset-0 overflow-hidden mt-4">
+             <div className="flex items-start justify-start mt-48 ml-24"> <Link
                 href="/blog"
-                className="inline-flex items-start text-white text-xl hover:text-white mb-4 transition-colors"
+                className="inline-flex items-start text-blue-600 text-xl hover:text-blue-700 mb-4 transition-colors"
               >
                 <svg className="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
                 Back to Media
               </Link></div>
-            {data.image && (
-              <Image
-                src={data.image}
-                alt={data.title || 'Article Header'}
-                fill
-                className="object-cover opacity-20"
-              />
-            )}
           </div>
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-           
-            <div className="text-center">
-             
-              <h1 className="text-3xl md:text-4xl font-bold text-white">{data.title || 'Article'}</h1>
-              <div className="mt-6 flex flex-wrap justify-center gap-4 text-green-100">
-                {data.date && (
-                  <span className="flex items-center">
-                    <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    {new Date(data.date).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
-                    })}
-                  </span>
-                )}
-                {data.author && (
-                  <span className="flex items-center">
-                    <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                    {data.author}
-                  </span>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Article Content */}
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
