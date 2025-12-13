@@ -24,13 +24,11 @@ const WhatWeDoSection = () => {
         {/* <p className="text-lg text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
           We work to build resilient food systems through various initiatives.
         </p> */}
-        <div className="text-lg text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
-          Fivewell Africa&apos;s work is anchored in five interconnected themes that guide our approach to 
-          sustainable and inclusive development.
-          Each theme represents a core area of impact and 
-          collectively forms a holistic framework for transforming Africa&apos;s communities, ecosystems, 
-          and economies.
-          Explore each theme to see how we turn vision into action.
+        <div className="text-lg text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto text-center">
+          Fivewell Africa&apos;s work is anchored on five interconnected themes that guide our approach to<br />
+          sustainable and inclusive development. Our themes revolve around community transformation,<br />
+          environmental stewardship, and economic resilience to collectively form a holistic framework for<br />
+          transforming communities, ecosystems, and economies.
         </div>
 
         {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

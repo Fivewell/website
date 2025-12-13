@@ -1,5 +1,6 @@
 "use client";
 
+import ServicesSection from "@/components/ServicesSection";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 import { themes } from "@/data/themes";
 import { motion } from "framer-motion";
@@ -79,8 +80,7 @@ export default function ThemesPage() {
               Our Strategic Themes
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Discover how our focused initiatives drive meaningful change and
-              create lasting impact across all our areas of expertise.
+      Explore our focused thematic areas and how they drive lasting impact across societies
             </p>
           </motion.div>
         </div>
@@ -174,7 +174,7 @@ export default function ThemesPage() {
                           <span className={`inline-flex items-center justify-center w-12 h-12 rounded-full ${color.button} text-base font-bold mb-3`}>
                             {String(index + 1).padStart(2, '0')}
                           </span>
-                          <h3 className="text-3xl font-bold text-white">
+                          <h3 className="text-3xl font-bold text-white break-words w-full">
                             <Link href={``} className="hover:underline">
                               {theme.title}
                             </Link>
@@ -189,20 +189,18 @@ export default function ThemesPage() {
                         {theme.theme_page_description}
                       </div>
                       
-                      {theme.subthemes && theme.subthemes.length > 0 && (
+                      {theme.keyFocusAreas && theme.keyFocusAreas.length > 0 && (
                         <div className="mt-2 space-y-2">
                           <h4 className="text-lg font-semibold mb-2">Focus Areas</h4>
                           <ol className="space-y-2">
-                            {theme.subthemes.map((subtheme, idx) => (
-                              <li key={subtheme.id} className="flex">
+                            {theme.keyFocusAreas.map((keyFocusArea, idx) => (
+                              <li key={keyFocusArea} className="flex">
                                 <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-white font-medium mr-3 mt-0.5">
                                   {idx + 1}
                                 </span>
                                 <div>
-                                  <h5 className="font-semibold text-gray-900 dark:text-white">{subtheme.title}</h5>
-                                  <p className="text-gray-600 dark:text-gray-300 text-sm mt-1">
-                                    {subtheme.description}
-                                  </p>
+                                  <h5 className="font-semibold text-gray-900 dark:text-white">{keyFocusArea}</h5>
+                              
                                 </div>
                               </li>
                             ))}
@@ -222,6 +220,8 @@ export default function ThemesPage() {
           <ProcessSection process={themes[0].process} />
         </section>
       )} */}
+
+      <ServicesSection />
 
       {/* CTA Section */}
       <section className="py-16 bg-primary dark:bg-primary text-white">

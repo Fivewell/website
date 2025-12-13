@@ -23,8 +23,8 @@ const AboutPage = () => {
               About Fivewell Africa
             </h1>
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-             Fivewell Africa is a purpose-driven consulting group and implementing partner dedicated to advancing sustainable and inclusive development across the continent.
-             We partner with communities, institutions, and changemakers to design and implement solutions that strengthen systems, unlock opportunities, and deliver measurable impact.
+              Fivewell Africa is a purpose-driven consulting group and implementing partner dedicated to advancing sustainable and inclusive development across the continent.
+              We partner with communities, institutions, and changemakers to design and implement solutions that strengthen systems, unlock opportunities, and deliver measurable impact.
             </p>
           </motion.div>
         </div>
@@ -73,10 +73,14 @@ const AboutPage = () => {
                     Our Beginning
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    When we left Kenya in the summer of 2023, we were just five
-                    experts in Agronomy, Environmental Science, Agribusiness,
-                    Agricultural Engineering, and Agricultural Extension, each
-                    seeking to sharpen our skills and expand our frontiers.
+                    Fivewell Africa began as a shared journey long before it became a consulting firm. It brings
+                    together specialists in Agricultural Engineering, Environmental Science, Agribusiness
+                    Economics, Agronomy, and Agricultural Extension, each with hands-on experience working
+                    across government, NGOs, INGOs, and the private sector. Our work in agriculture,
+                    environment, and food systems strengthened our understanding of the continent’s diverse
+                    contexts and the practical solutions needed to drive lasting change. In seeking to deepen
+                    this knowledge and expand our frontiers, our journeys converged in Israel where we went for
+                    advanced agricultural training.
                   </p>
                 </div>
               </motion.div>
@@ -97,9 +101,13 @@ const AboutPage = () => {
                     Inspiration in Israel
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                   In Israel we worked alongside leading experts in the Arava Valley and  witnessed firsthand how innovation, efficient systems, and
-                    determination could turn desert sands into fields that feed
-                    the world.
+                    In Israel we worked alongside leading experts in the Arava Valley and witnessed firsthand
+                    how determination, innovation, efficient farming systems, such as the Kibbutz and Moshav
+                    models, could turn desert sands into fields that feed the world. With its challenging climate
+                    and limited water resources, Israel provided the perfect context for learning about climate
+                    change adaptation, resilient agricultural systems, and advanced technologies, inspiring us to
+                    bring similar approaches home and adapt them to African realities for resilient, productive,
+                    and future-ready farming systems.
                   </p>
                 </div>
               </motion.div>
@@ -120,9 +128,11 @@ const AboutPage = () => {
                     The Birth of Fivewell
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                   Inspired by this possibility, and sharing this vision, we came together to bring that spirit of innovation back home. We believed that if the desert could bloom, then Africa&apos;s challenges too could
-                    be met with solutions rooted in knowledge, technology, and
-                    collaboration.Then, we became Fivewell.
+                    United by this vision, we came together to bring that spirit of innovation back home to fill
+                    existing gaps between innovation and implementation, between policy and practice, and
+                    between local challenges and global expertise. We believed that if the desert could bloom,
+                    then Africa&#39;s challenges too could be met with solutions rooted in knowledge, technology
+                    and collaboration. Then, we became Fivewell.
                   </p>
                 </div>
               </motion.div>
@@ -143,11 +153,10 @@ const AboutPage = () => {
                     Our Vision Today
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Today, Fivewell Africa stands as the convergence of five
-                    journeys, five pillars of expertise, and one well of
-                    solutions. With over 25 years of cumulative experience, we
-                    are committed to being a bridge between needs and solutions,
-                    and a partner in building a sustainable, prosperous Africa.
+                    Today, Fivewell Africa stands as the convergence of five journeys, five pillars of expertise,
+                    and one well of solutions. With over 25 years of cumulative experience, we are committed to
+                    being a bridge between needs and solutions, and a partner in building a sustainable,
+                    prosperous Africa.
                   </p>
                 </div>
               </motion.div>
@@ -219,8 +228,8 @@ const AboutPage = () => {
           </Tabs>
         </div>
 
-      {/* Background Image with dark mode overlay */}
-      {/* <div className="absolute inset-0 w-full h-full">
+        {/* Background Image with dark mode overlay */}
+        {/* <div className="absolute inset-0 w-full h-full">
         <div 
           className="absolute inset-0 bg-[url('/assets/Partnerships.jpg')] bg-cover bg-center bg-no-repeat dark:brightness-50 dark:contrast-125"
           style={{
@@ -233,7 +242,7 @@ const AboutPage = () => {
       </div>
       
       <PartnerSection /> */}
-    </section>
+      </section>
     </div>
   );
 };
