@@ -201,20 +201,27 @@ export default async function ArticlePage({ params }: ArticleParams) {
     };
 
     return (
-      <div className=" bg-gray-50 pt-20">
-        {/* Article Header */}
-     
-          <div className="absolute inset-0 overflow-hidden mt-4">
-             <div className="flex items-start justify-start mt-48 ml-24"> <Link
-                href="/blog"
-                className="inline-flex items-start text-blue-600 text-xl hover:text-blue-700 mb-4 transition-colors"
+      <div className="bg-gray-50 pt-20 relative z-10">
+        {/* Back Button */}
+        <div className="container mx-auto">
+          <div className="relative z-20 py-4">
+            <Link
+              href="/blog"
+              className="inline-flex items-center text-blue-600 hover:text-blue-700 text-lg transition-colors bg-white/80 backdrop-blur-sm rounded-lg  py-2 shadow-sm border border-gray-200"
+            >
+              <svg 
+                className="w-5 h-5 mr-2 flex-shrink-0" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+                aria-hidden="true"
               >
-                <svg className="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-                Back to Media
-              </Link></div>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Back to Media
+            </Link>
           </div>
+        </div>
 
         {/* Article Content */}
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
