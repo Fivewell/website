@@ -633,7 +633,7 @@ export const themes: Theme[] = [
     ],
   },
   {
-    title: "Partnerships &amp; Systems Change for Agriculture and the Environment",
+    title: "Partnerships & Systems Change for Agriculture and the Environment",
     slug: "partnerships",
     tagline: "Collaborative action that scale change.",
     description: "We partner with changemakers, governments, and organizations to design and deliver impactful programs. From policy design to implementation support, we build partnerships that strengthen institutions and drive transformative change at scale.",
