@@ -198,7 +198,7 @@ export default function ThemesPage() {
                                   {idx + 1}
                                 </span>
                                 <div>
-                                  <h5 className="font-semibold text-gray-900 dark:text-white">{keyFocusArea}</h5>
+                                  <h5 className=" text-gray-900 dark:text-white">{keyFocusArea}</h5>
                               
                                 </div>
                               </li>
