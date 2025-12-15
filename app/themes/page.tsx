@@ -191,7 +191,6 @@ export default function ThemesPage() {
                       
                       {theme.keyFocusAreas && theme.keyFocusAreas.length > 0 && (
                         <div className="mt-2 space-y-2">
-                          <h4 className="text-lg font-semibold mb-2">Focus Areas</h4>
                           <ol className="space-y-2">
                             {theme.keyFocusAreas.map((keyFocusArea, idx) => (
                               <li key={keyFocusArea} className="flex">
