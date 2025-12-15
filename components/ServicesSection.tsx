@@ -14,7 +14,7 @@ const services = [
     title: "Capacity Building & Training",
     subtitle: "Empowering Communities",
     description: "We train and mentor farmers, cooperatives, institutions, trainers (ToT) and organisations, to adopt better practices and technologies to improve project outcomes.",
-    icon: "🎓"
+   icon: "🧑‍🏫"
   },
   {
     number: "03",
