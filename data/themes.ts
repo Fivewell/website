@@ -344,7 +344,7 @@ export const themes: Theme[] = [
     ],
   },
   {
-    title: "Innovation, Technology &amp; Climate Solutions",
+    title: "Innovation, Technology & Climate Solutions",
     slug: "innovation-technology",
     tagline: "Technology for inclusive transformation.",
     description: "We pilot and scale human-centered innovations and digital solutions that address development challenges; improving efficiency, transparency, and access. Our focus is on technologies that simplify systems and enable equitable growth across agricultural and environmental sectors.",
