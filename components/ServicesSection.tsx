@@ -123,8 +123,8 @@ export default function ServicesSection() {
                           : '-bottom-4 -left-4'
                         } ${isEven
                           ? 'bg-gradient-to-br from-[#F3E6C2] to-[#e6d4a8]'
-                          : 'bg-gradient-to-br from-blue-600 to-blue-800'
-                        } ${isEven ? 'text-gray-900' : 'text-white'
+                          : 'bg-gradient-to-br from-[#F3E6C2] to-[#e6d4a8]'
+                        } ${isEven ? 'text-gray-900' : 'text-gray-900'
                         } w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg`}
                       style={{
                         transform: 'translateZ(20px)'

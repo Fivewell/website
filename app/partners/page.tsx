@@ -38,7 +38,7 @@ function BecomePartnerPage() {
       icon: <PlaceholderIcon className="w-12 h-12 text-primary" />,
       title: "Move Seamlessly",
       description:
-        "Move seamlessly from ideas to impact with a team that helps you translate strategy into measurable action — from co-design to on-the-ground implementation.",
+        "Move seamlessly from ideas to impact with a team that helps you translate strategy to on-the-ground implementation.",
     },
     {
       icon: <PlaceholderIcon className="w-12 h-12 text-primary" />,
@@ -127,7 +127,7 @@ function BecomePartnerPage() {
               Why Partner With Us?
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              We bring the strength of a multidisciplinary team with deep experience across Africa and beyond. 
+              We bring the strength of a multidisciplinary team with deep experience across Africa and beyond
               — professionals who have worked with development agencies, governments, and innovators to turn strategies into measurable impact.
             </p>
           </div>

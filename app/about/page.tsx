@@ -76,7 +76,7 @@ const AboutPage = () => {
                     Fivewell Africa began as a shared journey long before it became a consulting firm. It brings
                     together specialists in Agricultural Engineering, Environmental Science, Agribusiness
                     Economics, Agronomy, and Agricultural Extension, each with hands-on experience working
-                    across government, NGOs, INGOs, and the private sector. Our work in agriculture,
+                    across government, NGOs, INGOs, and the private sector.<br></br><br></br>  Our work in agriculture,
                     environment, and food systems strengthened our understanding of the continent’s diverse
                     contexts and the practical solutions needed to drive lasting change. In seeking to deepen
                     this knowledge and expand our frontiers, our journeys converged in Israel where we went for
@@ -103,7 +103,7 @@ const AboutPage = () => {
                   <p className="text-gray-600 dark:text-gray-300">
                     In Israel we worked alongside leading experts in the Arava Valley and witnessed firsthand
                     how determination, innovation, efficient farming systems, such as the Kibbutz and Moshav
-                    models, could turn desert sands into fields that feed the world. With its challenging climate
+                    models, could turn desert sands into fields that feed the world. <br></br><br></br>With its challenging climate
                     and limited water resources, Israel provided the perfect context for learning about climate
                     change adaptation, resilient agricultural systems, and advanced technologies, inspiring us to
                     bring similar approaches home and adapt them to African realities for resilient, productive,
@@ -130,7 +130,7 @@ const AboutPage = () => {
                   <p className="text-gray-600 dark:text-gray-300">
                     United by this vision, we came together to bring that spirit of innovation back home to fill
                     existing gaps between innovation and implementation, between policy and practice, and
-                    between local challenges and global expertise. We believed that if the desert could bloom,
+                    between local challenges and global expertise.<br></br><br></br> We believed that if the desert could bloom,
                     then Africa&#39;s challenges too could be met with solutions rooted in knowledge, technology
                     and collaboration. Then, we became Fivewell.
                   </p>
