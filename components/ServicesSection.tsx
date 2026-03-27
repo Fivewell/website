@@ -27,14 +27,14 @@ const services = [
     number: "04",
     title: "Programme & Project Implementation",
     subtitle: "Full-Cycle Support",
-    description: "We translate research and field experience into practical resources, including manuals, toolkits, case studies, and digital products that teams can use in the long term.. We also design learning platforms and peer-exchange opportunities such as field days to share insights and best practices.",
+    description: "We support full-cycle project management with and on behalf of partners, ensuring implementation is smooth, coordinated, and delivers measurable impact.",
     icon: "🚀"
   },
   {
     number: "05",
     title: "Supply Chain Development",
     subtitle: "Market Access Solutions",
-    description: "We translate research and field experience into practical resources, including manuals, toolkits, case studies, and digital products that teams can use in the long term.. We also design learning platforms and peer-exchange opportunities such as field days to share insights and best practices.",
+    description: "We facilitate market linkages (producer–buyer) and help agribusinesses to meet the quality and certification standards required for local and export markets.",
     icon: "🌾"
   }
 ];
